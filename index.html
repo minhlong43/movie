@@ -16,6 +16,8 @@
       integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -1395,8 +1397,24 @@
             <a href="#">MORE INFO > </a>
           </div>
           <div class="video col-6 ml-auto">
-            <i class="fa fa-play rounded-circle"></i>
+            <i
+              class="fa fa-play d-flex justify-content-center align-items-center border rounded-pill"
+            ></i>
           </div>
+        </div>
+        <div class="owl-carousel owl-theme">
+          <div class="item"><img src="./img/movie-14.jpg" alt="movie14"></img ></div>
+          <div class="item"><img src="./img/movie-2.jpg" alt="movie2" ></img ></div>
+          <div class="item"><img src="./img/movie-3.jpg" alt="movie3" ></img ></div>
+          <div class="item"><img src="./img/movie-4.jpg" alt="movie4" ></img ></div>
+          <div class="item"><img src="./img/movie-5.jpg" alt="movie5" ></img ></div>
+          <div class="item"><img src="./img/movie-6.jpg" alt="movie6" ></img ></div>
+          <div class="item"><img src="./img/movie-7.jpg" alt="movie7" ></img ></div>
+          <div class="item"><img src="./img/movie-8.jpg" alt="movie8" ></img ></div>
+          <div class="item"><img src="./img/movie-9.jpg" alt="movie9" ></img ></div>
+          <div class="item"><img src="./img/movie-13.jpg" alt="movie13" ></img ></div>
+          <div class="item"><img src="./img/movie-11.jpg" alt="movie11" ></img ></div>
+          <div class="item"><img src="./img/movie-12.jpg" alt="movie12" ></img ></div>
         </div>
       </div>
     </section>
@@ -1442,18 +1460,36 @@
             </a>
           </div>
         </div>
-        <div class="end d-flex pt-4">
-          <span>2017 © Movie Star / </span>
-          <p>Web design by Klever media</p>
+        <div class="end pt-4 pb-4">
+          <p>2017 © Movie Star / <span>Web design by Klever media</span></p>
         </div>
       </div>
     </footer>
-
+    <script>
+        $(".owl-carousel").owlCarousel({
+          stagePadding: 50,
+          loop: true,
+          margin: 10,
+          nav: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 3,
+            },
+            1000: {
+              items: 5,
+            },
+          },
+        })
+    </script>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"
     ></script>
+    <script src="./owl.carousel.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
