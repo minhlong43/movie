@@ -218,12 +218,9 @@
   background-image: url(../img/slide-7.png);
   background-repeat: round;
   width: 100%;
-  padding-bottom: 5rem;
   position: relative;
 }
-
 .coming .intro {
-  display: flex;
   color: #ffffff;
 }
 .coming .container > h1 {
@@ -302,7 +299,10 @@
 .coming .video:hover {
   cursor: pointer;
 }
-.coming::before {
+.coming .come {
+  position: relative;
+}
+.coming .come::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -311,6 +311,47 @@
   left: 0;
   background: linear-gradient(to top, #000000, transparent);
 }
+.coming .list {
+  background: #101010;
+}
+.coming .list img {
+  width: 100%;
+  border-radius: 1rem;
+}
+.coming .list span {
+  color: #535353;
+}
+.coming .list .item {
+  opacity: 0.5;
+}
+.coming .list .item:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+.coming .left,
+.coming .right {
+  font-size: 2rem;
+  color: #eb7433;
+}
+.coming .left {
+  left: 10rem;
+  bottom: 10rem;
+}
+.coming .right {
+  right: 10rem;
+  bottom: 10rem;
+}
+.coming .left:hover {
+  transition: all 0.5s ease-in-out;
+  left: 11rem;
+  bottom: 10rem;
+}
+.coming .right:hover {
+  transition: all 0.5s ease-in-out;
+  right: 11rem;
+  bottom: 10rem;
+}
+
 .schedule .time-movie a {
   color: #eb7433;
   letter-spacing: 5px;
@@ -343,6 +384,33 @@
 .schedule img {
   border-radius: 0.75rem;
 }
+.schedule .nav-item a {
+  font-size: 1.5rem;
+  color: #000000;
+  margin-right: 2rem;
+}
+.schedule .nav-item:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0.25rem;
+  background-image: linear-gradient(to right, #fbbd61, #ec7532);
+  box-shadow: 0 0 20px 0 #fbbd61;
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+  transition: all 0.5s;
+}
+.schedule .nav-item:hover::after,
+.schedule .nav-link.active::after {
+  width: 100%;
+  cursor: pointer;
+}
+.schedule .nav-item a:focus {
+  color: #eb7433;
+  text-decoration: underline;
+}
+
 .contact h1 {
   color: #eb7433;
   font-size: 3rem;
