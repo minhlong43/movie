@@ -16,6 +16,10 @@
       integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -26,8 +30,7 @@
           <span class="border-right pr-2 font-weight-bold">0330 123 4567</span>
           <i class="fa fa-search ml-2"></i>
         </p>
-
-        <nav class="py-0 navbar navbar-expand-lg navbar-dark">
+        <nav class="py-0 navbar navbar-expand navbar-dark">
           <a class="mr-0 navbar-brand" href="#"></a>
           <img src="./img/logo.svg" alt="logo" />
           <button
@@ -68,11 +71,15 @@
                   <a href="#">SIGN IN</a>
                 </li>
               </ul>
-            </div>
-          </div>
+              </div>
+                 </div>
+                <div class="bar">
+                   <i class="fa fa-bars"></i>
+                </div> 
         </nav>
       </div>
     </header>
+
     <section class="slider">
       <div
         id="carouselExampleCaptions"
@@ -89,11 +96,11 @@
           <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./img/hero-1.jpg" class="d-block w-100" alt="hero1" />
-            <div class="container carousel-caption d-none d-md-block text-left">
+          <div class="carousel-item active ">
+            <img src="./img/hero-1.jpg" class="d-block" alt="hero1" />
+            <div class="container carousel-caption text-left col-8 wow animate__animated animate__fadeInTopLeft"> 
               <span>ACTION, ADVENTURE, FANTASY</span>
-              <h1 class="display-4">End of the World:Part I</h1>
+              <h1>End of the World:Part I</h1>
               <p class="lead">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
                 itaque quaerat inventore. Distinctio veniam quisquam,
@@ -111,10 +118,10 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img src="./img/hero-2.jpg" class="d-block w-100" alt="hero2" />
-            <div class="container carousel-caption d-none d-md-block text-left">
+            <img src="./img/hero-2.jpg" class="d-block " alt="hero2" />
+            <div class="container carousel-caption text-left col-8 wow animate__animated animate__fadeInTopLeft">
               <span>ACTION, ADVENTURE, FANTASY</span>
-              <h1 class="display-4">End of the World:Part II</h1>
+              <h1>End of the World:Part II</h1>
               <p class="lead">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
                 itaque quaerat inventore. Distinctio veniam quisquam,
@@ -132,10 +139,10 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img src="./img/hero-3.jpg" class="d-block w-100" alt="hero3" />
-            <div class="container carousel-caption d-none d-md-block text-left">
+            <img src="./img/hero-3.jpg" class="d-block " alt="hero3" />
+            <div class="container carousel-caption text-left col-8 wow animate__animated animate__fadeInTopLeft">
               <span>ACTION, ADVENTURE, FANTASY</span>
-              <h1 class="display-4">End of the World:Part III</h1>
+              <h1>End of the World:Part III</h1>
               <p class="lead">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
                 itaque quaerat inventore. Distinctio veniam quisquam,
@@ -173,11 +180,12 @@
         </a>
       </div>
     </section>
+
     <section class="new">
       <div class="container">
         <h1 class="title">NEW IN</h1>
         <div class="row">
-          <div class="col-3">
+          <div class="col-lg-3 col-md-6 col-sm-12 col-12">
             <div class="item">
               <div class="img position-relative overflow-hidden">
                 <img class="w-100" src="./img/movie-2.jpg" alt="movie2" />
@@ -203,7 +211,7 @@
               <i class="fa fa-star"></i>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-lg-3 col-md-6 col-sm-12 col-12">
             <div class="item">
               <div class="img position-relative overflow-hidden">
                 <img class="w-100" src="./img/movie-3.jpg" alt="movie3" />
@@ -229,7 +237,7 @@
               <i class="fa fa-star"></i>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-lg-3 col-md-6 col-sm-12 col-12">
             <div class="item">
               <div class="img position-relative overflow-hidden">
                 <img class="w-100" src="./img/movie-4.jpg" alt="movie4" />
@@ -255,7 +263,7 @@
               <i class="fa fa-star"></i>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-lg-3 col-md-6 col-sm-12 col-12">
             <div class="item">
               <div class="img position-relative overflow-hidden">
                 <img class="w-100" src="./img/movie-1.jpg" alt="movie1" />
@@ -284,6 +292,7 @@
         </div>
       </div>
     </section>
+
     <section class="schedule">
       <div class="container pt-5">
         <ul class="nav border-bottom pb-3" id="myTab" role="tablist">
@@ -1330,7 +1339,7 @@
               </div>
             </div>
             <div class="row movie pt-5 pb-5">
-              <div class="col-3">
+              <div class="col-3 ">
                 <img src="./img/movie-8.jpg" alt="movie8" />
               </div>
               <div class="col-9">
@@ -1369,6 +1378,7 @@
         </div>
       </div>
     </section>
+
     <section class="coming bg-dark">
       <div class="come">
       <div class="container ">
@@ -1401,7 +1411,6 @@
             ></i>
           </div>
         </div>
-        
       </div>
     </div>
       <div class="list position-relative pb-5">
@@ -1437,26 +1446,29 @@
             <b>The Conmedian</b><br/>
             <span>24 January 2020</span>
           </div>
-          <!-- <div class="item"><img src="./img/movie-7.jpg" alt="movie7" ></img ></div>
+         <!-- <div class="item"><img src="./img/movie-7.jpg" alt="movie7" ></img ></div> 
           <div class="item"><img src="./img/movie-8.jpg" alt="movie8" ></img ></div>
           <div class="item"><img src="./img/movie-9.jpg" alt="movie9" ></img ></div>
           <div class="item"><img src="./img/movie-13.jpg" alt="movie13" ></img ></div>
           <div class="item"><img src="./img/movie-11.jpg" alt="movie11" ></img ></div>
           <div class="item"><img src="./img/movie-12.jpg" alt="movie12" ></img ></div> -->
-        </div>
+        <!-- </div>  -->
         <div class="left position-absolute">
           <i class="fa fa-angle-left"></i>
         </div>
         <div class="right position-absolute">
           <i class="fa fa-angle-right"></i>
         </div>
-        </div>
         
+        </div>
+        </div>
     </section>
+
     <section class="contact text-center pt-5 pb-5">
       <p>Need help? Contact our support team on</p>
       <h1>0330 123 4567</h1>
     </section>
+
     <footer class="footer text-white">
       <div class="container">
         <div class="row border-bottom pb-3 pt-5 w-100">
@@ -1506,30 +1518,33 @@
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous">
     </script>
-    <!-- <script>
-      $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:5
-        }
-    }
-})
-    </script> -->
+    <script>
+//   $('.owl-carousel').owlCarousel({
+//     loop:true,
+//     margin:10,
+//     nav:true,
+//     responsive:{
+//         0:{
+//             items:1
+//         },
+//         600:{
+//             items:3
+//         },
+//         1000:{
+//             items:5
+//         }
+//     }
+// });
+    </script>
     <script src="./owl.carousel.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
       crossorigin="anonymous"
     ></script>
-    
+    <script src="./wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>
