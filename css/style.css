@@ -512,7 +512,19 @@
   .schedule .time-movie .time i,button,p,span {
     font-size: 0.8rem;
   }
- 
+  .schedule .time-movie .time{
+    display: flex;
+    justify-content: space-between;
+  }
+  .viewing-time{
+    display: block;
+    width: 100%;
+  }
+  .full-time{
+    text-align: right;
+    display: block;
+    width: 100%;
+  }
 }
 @media screen and (max-width: 576px) {
   .schedule .nav {
