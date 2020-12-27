@@ -277,13 +277,13 @@
 .coming .info .pro i:nth-child(6) {
   margin: 0 0.5rem 0 1rem;
 }
-.coming .video {
+/* .coming .video {
   background-image: url(../img/slide-7-video.png);
   background-repeat: no-repeat;
   width: 100%;
   position: relative;
   display: block;
-}
+} */
 .coming .video i {
   border: 0.2rem solid #eb7433 !important;
   width: 6rem;
@@ -480,6 +480,37 @@
     font-size: 1.25rem;
     margin-right: 1rem;
   }
+  .schedule .time-movie .time i,
+  button,
+  p,
+  span {
+    font-size: 0.875rem;
+  }
+  .viewing-time .btn {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.75rem;
+  }
+  .coming .video i {
+    width: 5rem;
+    height: 5rem;
+    font-size: 1.75rem;
+    border: 2px solid #eb7433 !important;
+  }
+  .coming .info > p {
+    font-size: 1.75rem;
+  }
+  .coming .col-6 {
+    flex: unset;
+    max-width: 100%;
+  }
+  .coming .list .col-2 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .coming .list .item-1,
+  .coming .list .item-2 {
+    display: none;
+  }
 }
 @media screen and (max-width: 768px) {
   .header .bar {
@@ -496,34 +527,53 @@
   .schedule .nav-item a {
     margin-right: 0.5rem;
   }
-  .schedule .movie{
+  .schedule .movie {
     display: block;
     width: 100%;
   }
-  .schedule .movie img{
+  .schedule .movie img {
     width: auto;
   }
-  .schedule .time-movie b,span, a {
+  .schedule .time-movie b,
+  span,
+  a {
     font-size: 0.8rem;
   }
-  .schedule .time-movie h1{
+  .schedule .time-movie h1 {
     font-size: 1.5rem;
   }
-  .schedule .time-movie .time i,button,p,span {
+  .schedule .time-movie .time i,
+  button,
+  p,
+  span {
     font-size: 0.8rem;
   }
-  .schedule .time-movie .time{
-    display: flex;
-    justify-content: space-between;
+  .viewing-time .btn {
+    padding: 0.2rem 0.3rem;
+    font-size: 0.75rem;
   }
-  .viewing-time{
-    display: block;
-    width: 100%;
+  .schedule .col-9,
+  .schedule .col-3 {
+    max-width: 100%;
   }
-  .full-time{
-    text-align: right;
-    display: block;
-    width: 100%;
+  .schedule .time {
+    flex-wrap: wrap;
+  }
+  .coming .video i {
+    width: 4rem;
+    height: 4rem;
+    font-size: 1.25rem;
+  }
+  .coming .info > p,
+  > b {
+    font-size: 1rem;
+  }
+  .coming .list .col-2 {
+    flex: 0 0 33%;
+    max-width: 33%;
+  }
+  .coming .list .item-3 {
+    display: none;
   }
 }
 @media screen and (max-width: 576px) {
@@ -537,7 +587,15 @@
     left: 0;
   }
   .schedule .nav-item:hover::after,
-.schedule .nav-link.active::after {
-  width: 4px;
-  height: 100%;
+  .schedule .nav-link.active::after {
+    width: 4px;
+    height: 100%;
+  }
+  .coming .list .col-2 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .coming .list .item-4 {
+    display: none;
+  }
 }
